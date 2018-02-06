@@ -4,7 +4,12 @@ const initialState = {
 const lang =  (state = initialState, action) => {
     switch(action.type) {
         case 'LANG':
-        return {}
+        return {
+            ...state,
+            data: [...state.data, {
+                text: action.text
+            }]
+        }
 
         default: 
         return state
