@@ -3,7 +3,8 @@ import Sidebar from './sidebar';
 import Header from './header';
 import About from './about';
 import Features from './features';
-import Testimonials from './testimonials';
+import TestimonialPics from './testimonial-pics';
+import TestimonialStory from './testimonial-story';
 import Shop from './shop';
 import Gallery from './gallery';
 import Footer from './footer';
@@ -25,8 +26,11 @@ class App extends Component {
         <div className="features">
           <Features />
         </div>
-        <div className="testim">
-          <Testimonials/>
+        <div className="story__pictures">
+          <TestimonialPics/>
+        </div>
+        <div className="story__content">
+          <TestimonialStory/>
         </div>
         <div className="shop">
           <Shop/>
