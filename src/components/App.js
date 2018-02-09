@@ -26,10 +26,10 @@ class App extends Component {
         <div className="features">
           <Features />
         </div>
-        <div className="story__pictures">
+        <div className="story-pictures">
           <TestimonialPics/>
         </div>
-        <div className="story__content">
+        <div className="story-content">
           <TestimonialStory/>
         </div>
         <div className="shop">

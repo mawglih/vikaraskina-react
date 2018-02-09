@@ -6,7 +6,6 @@ class Feature extends Component {
 
     renderItem() {
         return FeatureData.map((item, index) => {
-            console.log(item.icon);
             return <FeatureItem key={index} text={item.text} heading={item.heading} icon={item.icon}/>
         })
     }

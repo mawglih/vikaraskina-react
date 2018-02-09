@@ -1,4 +1,63 @@
 .shop {
-    background-color: $color-tertiary;
     grid-column: center-start / center-end;
+    &__internal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 7rem;
+        margin: 15rem 0;
+    }
+}
+.shop-item {
+    background-color: $color-tertiary-light;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3.5rem;
+    &__img {
+        width: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    &__name {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        z-index: 3;
+        justify-self: center;
+        align-self: end;
+        width: 80%;
+        font-family: $font-secondary;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1.25rem;
+        background-color: $color-secondary;
+        color: $color-white;
+        font-weight: 400;
+        transform: translateY(50%);
+    }
+    &__description {
+        margin-top: 2rem;
+        &-text {
+            padding-left: 1rem;
+        }
+    }
+    &__price {
+        margin-top: 2rem;
+        &-text {
+            padding-left: 1rem;
+        }
+    }
+    &__description,
+    &__price {
+        display: flex;
+        align-items: top;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        svg {
+            fill: $color-primary;
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+    &__btn {
+        grid-column: 1 / -1;
+    }
 }
